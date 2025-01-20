@@ -1,4 +1,8 @@
-datasource:
+spring:
+  application:
+    name: ShoppingService
+
+  datasource:
     url: jdbc:mysql://localhost:3306/assessment
     username: root
     password: Asha@121001
@@ -13,6 +17,8 @@ datasource:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
 
+server:
+  port: 8081
 
 eureka:
   client:
